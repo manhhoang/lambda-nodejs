@@ -38,6 +38,8 @@ cd ../
 
 ```bash
 sam local start-api --debug-port 5858
+
+sam local invoke -e event.json HelloWorldFunction --debug-port 5858
 ```
 
 If the previous command ran successfully you should now be able to hit the following local endpoint to invoke your function `http://localhost:3000/hello`
